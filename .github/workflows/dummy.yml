@@ -26,4 +26,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a script
-        run: echo Repo: ${{ inputs.repo }}
+        run: echo "Repo - $REPO"
+        env:
+          REPO: ${{ inputs.repo }}
