@@ -27,6 +27,8 @@ jobs:
           echo x >> x
           git add x
           git commit -m 'x'
-          git push --tags
+          git tag x
+          git push origin x
+          git push
         env:
           REPO: ${{ inputs.repo }}
