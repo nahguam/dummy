@@ -22,5 +22,9 @@ jobs:
         run: |
           git status
           git remote -v
+          echo x >> x
+          git add x
+          git commit -m 'x'
+          git push
         env:
           REPO: ${{ inputs.repo }}
