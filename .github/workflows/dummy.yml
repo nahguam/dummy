@@ -20,6 +20,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a script
         run: |
+          git config user.email "davidamaughan@gmail.com"
+          git config user.name "nahguam"
           git status
           git remote -v
           echo x >> x
